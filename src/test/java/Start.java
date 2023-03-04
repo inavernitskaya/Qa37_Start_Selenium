@@ -11,8 +11,8 @@ public class Start {
         wd=new ChromeDriver();
        // wd.get("https://www.google.com/");without history
         wd.navigate().to("https://www.google.com/");//with history
-      //  wd.navigate().forward();//back to last page
-       // wd.navigate().refresh();//obnovlenie
+        wd.navigate().forward();//back to last page
+        wd.navigate().refresh();//obnovlenie
 
 
         //wd.close();//only one tab, if tab only one & close browser
