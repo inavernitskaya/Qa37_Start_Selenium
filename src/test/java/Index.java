@@ -14,7 +14,7 @@ public class Index {
     @BeforeClass
     public void setUp(){
         wd = new ChromeDriver();
-        wd.get("file:///C:/Users/Adam-milo/Downloads/index.html");
+        wd.get("file:///C:/Users/Adam-milo/Desktop/%D7%AA%D7%9C-%D7%A8%D7%9F/Lessons_base/QA/lessons/Automation/index.html");
     }
 
     @Test
@@ -62,9 +62,12 @@ public class Index {
         List<WebElement> a1 = wd.findElements(By.partialLinkText("m 1"));
 
         WebElement inp = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
-        //start
+        // start
         wd.findElement(By.cssSelector("[placeholder ^='Type']"));
-        //end
+        // end
+        wd.findElement(By.cssSelector("[placeholder $='name']"));
+        // contains
+        wd.findElement(By.cssSelector("[placeholder *='your']"));
 
     }
 
