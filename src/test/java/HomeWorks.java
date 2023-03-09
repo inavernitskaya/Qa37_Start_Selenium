@@ -17,10 +17,13 @@ public class HomeWorks {
         @Test
         public void cssLocators(){
             // by tag name
+           
             WebElement el= wd.findElement(By.tagName("div"));
             WebElement element = wd.findElement(By.cssSelector("div"));
             List<WebElement> list = wd.findElements(By.tagName("div"));
             List<WebElement> list1 = wd.findElements(By.cssSelector("div"));
+
+
 
             WebElement el1 = wd.findElement(By.tagName("h1"));
             WebElement element1 = wd.findElement(By.cssSelector("h1"));
@@ -45,6 +48,7 @@ public class HomeWorks {
             WebElement element6 = wd.findElement(By.cssSelector("button"));
             List<WebElement> lis6= wd.findElements(By.tagName("button"));
             List<WebElement> list7 = wd.findElements(By.cssSelector("button"));
+            wd.findElement(By.xpath("//button"));
 
 
             // by class
