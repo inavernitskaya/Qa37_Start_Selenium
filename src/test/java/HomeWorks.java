@@ -17,7 +17,7 @@ public class HomeWorks {
         @Test
         public void cssLocators(){
             // by tag name
-           
+
             WebElement el= wd.findElement(By.tagName("div"));
             WebElement element = wd.findElement(By.cssSelector("div"));
             List<WebElement> list = wd.findElements(By.tagName("div"));
