@@ -85,19 +85,19 @@ public class HomeWorks {
 
             // by attribute
             WebElement a1= wd.findElement(By.cssSelector("[href='/home']"));
-            WebElement element13 = wd.findElement(By.xpath("//*[@attribute='home']"));
+            WebElement element13 = wd.findElement(By.xpath("//*[@href='home']"));
 
             WebElement a2= wd.findElement(By.cssSelector("[href='/about']"));
-            WebElement element14 = wd.findElement(By.xpath("//*[@attribute='about']"));
+            WebElement element14 = wd.findElement(By.xpath("//*[@href='about']"));
 
             WebElement a3= wd.findElement(By.cssSelector("[href='/login']"));
-            WebElement element15 = wd.findElement(By.xpath("//*[@attribute='login']"));
+            WebElement element15 = wd.findElement(By.xpath("//*[@href='login']"));
 
             WebElement inputEmail = wd.findElement(By.cssSelector("[placeholder='Email']"));
-            WebElement element16 = wd.findElement(By.xpath("//*[@attribute='Email']"));
+            WebElement element16 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
 
             WebElement inputPassword = wd.findElement(By.cssSelector("[placeholder='Password']"));
-            WebElement element17 = wd.findElement(By.xpath("//*[@attribute='Password']"));
+            WebElement element17 = wd.findElement(By.xpath("//*[@placeholder='Password']"));
 
 
 
